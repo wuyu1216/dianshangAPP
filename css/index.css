@@ -1,0 +1,429 @@
+/*
+* @Author: asus
+* @Date:   2017-11-10 09:04:03
+* @Last Modified by:   asus
+* @Last Modified time: 2017-11-13 21:30:48
+*/
+body{
+	margin: 0;
+	background-color: #F4E2D4;
+}
+input,ul,li,p{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	list-style: none;
+}
+img{
+	display: block;
+}
+a{
+	text-decoration: none;
+}
+.header{
+	width: 100%;
+	height: 1.45rem;
+	background-color: #FAFAFA;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 99;
+}
+.header .top{
+	width: 100%;
+	height: 0.55rem;
+	padding: 0.15rem 0;
+}
+.header .top .logo{
+	width: 1rem;
+	height: 0.55rem;
+	padding: 0 0.25rem;
+	box-sizing: border-box;
+	float: left;
+}
+/*.header .top .logo img{
+	width: 0.5rem;
+	height: 0.33rem;
+	margin-top: -0.1rem;
+}*/
+.header .top .logo h2{
+	margin:0;
+	padding:0;
+	font-size: 0.34rem;
+	background-image: -webkit-linear-gradient(#DEB43E,#FB701C,#DC2655);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	text-transform: uppercase;
+}
+.header .top .search{
+	width: 4rem;
+	height: 0.36rem;
+	padding: 0.1rem 0.6rem;
+	border: 1px solid #ccc;
+	float: left;
+	margin-left: 0.05rem;
+	border-radius: 0.06rem;
+	position: relative;
+	top: 0;
+	left: 0;
+}
+.header .top .search i{
+	font-size: 0.32rem;
+	color:rgba(0,0,0,.3);
+	float: left;
+	position: absolute;
+	top: 0.1rem;
+	left: 0.1rem;
+	font-weight: bold;
+
+}
+.header .top .search span{
+	font-size: 0.26rem;
+	color:rgba(0,0,0,.3);
+	line-height: 0.34rem;
+	float: left;
+}
+.header .top .login span{
+	font-size: 0.28rem;
+	text-align: center;
+	color: #969696;
+	line-height: 0.37rem;
+	float: left;
+	margin-left: 0.3rem;
+	margin-top: 0.12rem;
+}
+.header .bottom{
+	width: 100%;
+	height: 0.6rem;
+}
+.header .bottom .box{
+	width: auto;
+	height: 0.56rem;
+	margin: 0 0.28rem;
+	border-bottom:0.02rem solid transparent;
+	line-height: 0.56rem;
+    font-size: 0.26rem;
+    color: #747474;
+    float: left;
+}
+.header .bottom .box:nth-child(6){
+	margin-right: 0;
+}
+.header .bottom .box:hover{
+	border-bottom-color: #ed5b00;
+	color:#ed5b00 ;
+}
+.tu1 img{
+	width: 100%;
+	height: auto;
+	margin-top:1.45rem;
+}
+.tu2 img{
+	width: 100%;
+	height: auto;
+}
+.tu3 img{
+	width:20%;
+	height:auto;
+	float: left;
+} 
+.tu4 img{
+	width: 100%;
+	height: auto;
+}
+.order{
+	width: 7.3rem;
+	height:auto;
+	margin: 0 auto;
+	background-color: #fff;
+	position: relative;
+	top: 0;
+	left: 0;
+}
+.order img{
+	width: 100%;
+	height: 4.56rem;
+	margin-top: 0.2rem;
+
+}
+.order img:last-child{
+	width: 1rem;
+	height: auto;
+	position: absolute;
+	bottom: 1.5rem;
+	right: 0.3rem;
+}
+.order .box{
+	width: 6.98rem;
+	height: 1.06rem;
+	padding: 0.16rem;
+}
+.order .box .one{
+	width: 100%;
+	height: 0.4rem;
+	position: relative;
+	top: 0;
+	left: 0;
+}
+.order .box .one .name{
+	font-size: 0.28rem;
+	color: rgba(0,0,0,.87);
+}
+.order .box .one span{
+	font-size: 0.2rem;
+	color:#FF4A48;
+	font-weight: 400;
+	position: absolute;
+	top: 0;
+	right: 1rem;
+}
+.order .box .one .price{
+	font-size: 0.32rem;
+	color:#FF4A48;
+	font-weight: 400;
+	position: absolute;
+	top: 0;
+	right: 0.2rem;
+}
+.order .box .one .yuan1{
+	font-size: 0.22rem;
+	color: rgba(0,0,0,.54);
+	position: absolute;
+	top: 0.1rem;
+	right: 0.7rem;
+	
+}
+.order .box .one .price1{
+	font-size: 0.22rem;
+	color: rgba(0,0,0,.54);
+	position: absolute;
+	top: 0.1rem;
+	right: 0.28rem;
+	
+}
+.order .box .one .qi{
+	font-size: 0.2rem;
+	color: #ff6000;
+	position: absolute;
+	top: 0.1rem;
+	right: 0;
+
+}
+.order .box .two{
+	width: 100%;
+	height: 0.66rem;
+	position: relative;
+	top: 0;
+	left: 0;
+}
+.order .box .two .brief{
+	font-size: 0.23rem;
+	color: rgba(0,0,0,.54);
+	line-height: 0.66rem;
+}
+.order .box .two .buy{
+	width: 2rem;
+	height: 0.32rem;
+	background-color: #ff4a48;
+	border-radius: .05rem;
+	font-size: 0.24rem;
+	color: #fff;
+	text-align: center;
+	padding: 0.16rem 0;
+	float: right;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+.order1{
+	width: 7.3rem;
+	height:5.2rem;
+	margin: 0 auto;
+	margin-top:0.2rem;
+}
+
+.order1 .box{
+	width: 3.54rem;
+	height:100%;
+	background-color: #fff;
+	float: left;
+	position: relative;
+	top: 0;
+	left: 0;
+
+}
+.order1 .box:nth-child(2){
+	float: right;
+}
+.order1 .box img{
+	width: 100%;
+	height:2.9rem;
+}
+.order1 .box img:last-child{
+	width: 1rem;
+	height: auto;
+	position: absolute;
+	bottom: 2.4rem;
+	right: 0.4rem;
+}
+.order1 .box .name{
+	font-size: 0.28rem;
+	color: rgba(0,0,0,.87);
+	text-align: center;
+	margin-top: 0.2rem;
+}
+.order1 .box .brief{
+	font-size: 0.23rem;
+	color: rgba(0,0,0,.54);
+	text-align: center;
+}
+.order1 .box .yuan{
+	font-size: 0.2rem;
+	color:#FF4A48;
+	font-weight: 400;
+	float: left;
+	margin-left: 1.3rem;
+	margin-top: 0.18rem;
+}
+.order1 .box .yuan1{
+	font-size: 0.22rem;
+	color: rgba(0,0,0,.54);
+	float: left;
+	margin-top: 0.2rem;
+	margin-left: 0.1rem;
+}
+.order1 .box .price{
+	font-size: 0.32rem;
+	color:#FF4A48;
+	font-weight: 400;
+	float: left;
+	margin-top: 0.1rem;
+	margin-left: 0.05rem;	
+}
+.order1 .box .price1{
+	font-size: 0.22rem;
+	color: rgba(0,0,0,.54);
+	float: left;
+	margin-top: 0.2rem;
+}
+
+.order1 .box .buy{
+	width: 2rem;
+	height: 0.32rem;
+	background-color: #ff4a48;
+	border-radius: .05rem;
+	font-size: 0.24rem;
+	color: #fff;
+	text-align: center;
+	padding: 0.16rem 0;
+	margin-top: 0.05rem;
+	margin-right: 0.8rem;
+	float: right;
+}
+/* 硬货 */
+.tu5 img{
+	width: 100%;
+	height: auto;
+	margin-top: 0.2rem;
+}
+/* 周边生活 */
+.tu10 img{
+	width: 100%;
+	height: 100%;
+	margin-top: 0.2rem;
+}
+.tu6 img{
+	width: 100%;
+	height: 1.34rem;
+	margin-top: 0.2rem;
+}
+.tu7 img{
+	width: 100%;
+	height: 100%;
+}
+.tu8 img{
+	width: 100%;
+	height: 100%;
+	margin-bottom:1rem ;
+}
+
+/* banner */
+.banner{
+	width: 100%;
+	height: 4.7rem;
+	background-color: #D51E16;
+}
+.banner .box{
+	width: 7.3rem;
+	height: 100%;
+	background-color: yellow;
+	margin: 0 auto;
+	position: relative;
+	top: 0;
+	left: 0;
+}
+.banner .box ul{
+	width: 1.4rem;
+	height: auto;
+	position: absolute;
+	bottom:0.08rem ;
+	right:0.4rem ;
+}
+.banner .box ul li{
+	width: 0.14rem;
+	height: 0.14rem;
+	border-radius: 50%;
+	background-color: #ccc;
+	float: left;
+	margin-left: 0.08rem;
+}
+.banner .box ul li:hover{
+	background-color: #fff;
+}
+.banner .box img{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+/* 底部 */
+.footer{
+	width: 100%;
+	height: 1rem;
+	background-color: #fff;
+	border-top: 0.01rem solid #e0e0e0;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	z-index: 99;
+}
+.footer  .box{
+	width: 25%;
+	height: 100%;
+	float: left;
+	position: relative;
+	top: 0;
+	left: 0;
+	
+}
+.footer .box i{
+	font-size: 0.4rem;
+	color: #333;
+	position: absolute;
+	top: 0.1rem;
+	left: 0.74rem;
+
+}
+.footer .box p{
+	font-size: 0.22rem;
+	color: #333;
+	margin-top: 0.6rem;
+	/* margin-left: 0.75rem; */
+	text-align: center;
+}
+
+.footer .box .one{
+	color: #F56A00;
+}

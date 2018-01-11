@@ -1,0 +1,244 @@
+/*
+* @Author: asus
+* @Date:   2017-11-13 18:48:56
+* @Last Modified by:   asus
+* @Last Modified time: 2017-11-16 00:01:29
+*/
+body{
+	margin: 0;
+}
+input,ul,li,p{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	list-style: none;
+}
+img{
+	display: block;
+}
+a{
+	text-decoration: none;
+}
+.top{
+	width: 100%;
+	height: 0.55rem;
+	padding: 0.15rem 0;
+	border-bottom: 0.01rem solid #efefef;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 1000;
+	background-color: #fff
+}
+.top .search{
+	width: 4.8rem;
+	height: 0.33rem;
+	padding: 0.1rem 0.6rem;
+	border: 0.01rem solid #ccc;
+	float: left;
+	margin-left: 0.4rem;
+	position: relative;
+	top: 0;
+	left: 0;
+}
+ .top .search i{
+	font-size: 0.32rem;
+	color:rgba(0,0,0,.3);
+	float: left;
+	position: absolute;
+	top: 0.1rem;
+	left: 0.1rem;
+	font-weight: bold;
+
+}
+.top .search span{
+	font-size: 0.26rem;
+	color:rgba(0,0,0,.3);
+	line-height: 0.34rem;
+	margin-left: 0.05rem;
+	float: left;
+}
+.top i:nth-child(2){
+	font-size: 0.5rem;
+	color:rgba(0,0,0,.3);
+	position: absolute;
+	top: 0.2rem;
+	right: 0.25rem;
+}
+/* 侧面 */
+.left{
+	width: 1.52rem;
+	height: 12.4rem;
+	border-right: 0.01rem solid #efefef;
+	float: left;
+	position: fixed;
+	left: 0;
+	top: 0.86rem;
+	bottom:1.01rem;
+}
+.left ul{
+	width: 1.22rem;
+	height: 12rem;
+	padding: .2rem .3rem .2rem 0;
+	background: #fefefe;
+}
+.left ul li{
+	width: 100%;
+	height: 0.8rem;
+	font-size: 0.32rem;
+	line-height: 0.9rem;
+	text-align: center;
+}
+/* 右面 */
+.right{
+	width: 5.25rem;
+	height: 196rem;
+	/* background-color: red; */
+	float: right;
+	margin-top: 0.86rem;
+	margin-right: 0.33rem;
+}
+.right .item{
+	width: 100%;
+	height: 2.08rem;
+}
+.right .item img{
+	width: 100%;
+	height: 2.08rem;
+}
+.right .title{
+	width: 100%;
+	height: 1.33rem;
+	margin-top: 0.2rem;
+	position: relative;
+	top: 0;
+	left: 0;
+}
+.right .title span{
+	display: block;
+	font-size: .28rem;
+    font-weight: 400;
+    text-align: center;
+    line-height: 1.33rem;
+}
+/* .right .title .gang1{
+	width: 0.4rem;
+	height: 0.01rem;
+	background-color: #ccc;
+	position: absolute;
+	top: 50%;
+	left: 1.7rem;
+}
+.right .title .gang2{
+	width: 0.4rem;
+	height: 0.01rem;
+	background-color: #ccc;
+	position: absolute;
+	top: 50%;
+	right: 1.7rem;
+} */
+.right .box{
+	width: 100%;
+	height: 4.34rem;
+}
+.right .box .con{
+	width: 33.33%;
+	height: 1.65rem;
+	margin-top: .2rem;
+    margin-bottom: .3rem;
+    float: left;
+}
+.right .box .con img{
+	width: 1.04rem;
+	height: 1.04rem;
+	margin-left: 0.4rem;
+}
+.right .box .con p{
+	width: 100%;
+	height: 1.04rem;
+	font-size: 0.23rem;
+	margin-top: .28rem;
+	color: rgba(0,0,0,.54);
+	text-align: center;
+}
+/* 电视 */
+.right .box1{
+	width: 100%;
+	height: 2.17rem;
+}
+.right .box1 .con{
+	width: 33.33%;
+	height: 1.65rem;
+	margin-top: .2rem;
+    margin-bottom: .3rem;
+    float: left;
+}
+.right .box1 .con img{
+	width: 1.04rem;
+	height: 1.04rem;
+	margin-left: 0.4rem;
+}
+.right .box1 .con p{
+	width: 100%;
+	height: 1.04rem;
+	font-size: 0.23rem;
+	margin-top: .28rem;
+	color: rgba(0,0,0,.54);
+	text-align: center;
+}
+/* 去分会场看看 */
+
+.right .item1{
+	width: 100%;
+	height: 0.84rem;
+}
+.right .item1 img{
+	width: 100%;
+	height: 0.84rem;
+}
+
+
+
+
+
+
+/* 底部 */
+.footer{
+	width: 100%;
+	height: 1rem;
+	background-color: #fff;
+	border-top: 0.01rem solid #e0e0e0;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	z-index: 99;
+	/* margin-top: 0.9rem; */
+}
+.footer  .box{
+	width: 25%;
+	height: 100%;
+	float: left;
+	position: relative;
+	top: 0;
+	left: 0;
+	
+}
+.footer .box i{
+	font-size: 0.4rem;
+	color: #333;
+	position: absolute;
+	top: 0.1rem;
+	left: 0.74rem;
+
+}
+.footer .box p{
+	font-size: 0.22rem;
+	color: #333;
+	margin-top: 0.6rem;
+	/* margin-left: 0.75rem; */
+	text-align: center;
+}
+
+.footer .box .one{
+	color: #F56A00;
+}

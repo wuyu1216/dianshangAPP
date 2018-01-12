@@ -3,26 +3,44 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
-	<title>xiangqing</title>
+	<title>详情</title>
 	<script src="rem.js"></script>
 	<link rel="stylesheet" href="http://at.alicdn.com/t/font_471281_elrro3e7w91wcdi.css
 ">
 	<link rel="stylesheet" href="css/index4.css">
+	<link rel="stylesheet" href="css/swiper.min.css">
 </head>
 <body>
 	<div class="header">
-		<a href="index.html">
-			<img src="img/e268eb2b-4484-6c88-5c74-fb4be1d6477b.webp" alt="">
-			<img src="img/0568f9b5-8ef0-cc29-5de5-7d027a33b048.webp" alt="">
-			<img src="img/71cf050c-d746-9c4d-71d0-b0893f56e3b5.webp" alt="">
-			<img src="img/back_48bef14.png" alt="">
-			<img src="img/share_18c55d7.png" alt="">
-		</a>
-		<ul>
-			<li style="background-color: #fff;"></li>
-			<li></li>
-			<li></li>
-		</ul>
+		<div class="top">
+			<div class="swiper-container">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<img src="img/e268eb2b-4484-6c88-5c74-fb4be1d6477b.webp" alt="">
+					</div>
+					<div class="swiper-slide">
+						<img src="img/0568f9b5-8ef0-cc29-5de5-7d027a33b048.webp" alt="">
+					</div>
+					<div class="swiper-slide">
+						<img src="img/71cf050c-d746-9c4d-71d0-b0893f56e3b5.webp" alt="">
+					</div>
+				</div>
+				<div class="swiper-pagination"></div>
+			</div>
+			<!--<ul>
+				<li><a href=""><img src="img/8ee236a2-ed5f-a1a9-a16a-d5ddede18df7.webp" alt=""></a></li>
+			</ul>-->
+			<div class="back">
+				<a href="index.html">
+					<img src="img/back_48bef14.png" alt="">
+				</a>
+			</div>
+			<div class="share">
+				<a href="">
+					<img src="img/share_18c55d7.png"alt="">
+				</a>
+			</div>
+		</div>
 	</div>
 	<div class="con">
 		<div class="name">小米6 </div>
@@ -218,9 +236,37 @@
 		</a>
 	</div>
 
+	<script src="swiper.min.js"></script>
+	<script>
+        var swiper = new Swiper('.swiper-container',{
+            direction : 'horizontal',
+            autoplay:true,
+            speed:800,
+            loop:true,
+            // effect : 'fade',
+            pagination : {
+                el:'.swiper-pagination',
+            },
+            // on:{
+            //     init:function(swiper){
+            //         slide=this.slides.eq(0);
+            //         slide.addClass('ani-slide');
+            //     },
+            //     transitionStart: function(){
+            //         for(i=0;i<this.slides.length;i++){
+            //             slide=this.slides.eq(i);
+            //             slide.removeClass('ani-slide');
+            //         }
+            //     },
+            //     transitionEnd: function(){
+            //         slide=this.slides.eq(this.activeIndex);
+            //         slide.addClass('ani-slide');
+            //
+            //     },
+            // }
+        });
 
-
-
+	</script>
 
 
 

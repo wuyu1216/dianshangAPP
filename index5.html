@@ -7,16 +7,26 @@
 	<script src="rem.js"></script>
 	<link rel="stylesheet" href="http://at.alicdn.com/t/font_471281_dw8ldsyjmbfn7b9.css">
 	<link rel="stylesheet" href="css/index5.css">
+	<link rel="stylesheet" href="css/swiper.min.css">
 </head>
 <body>
 	<div class="login">
 		<div class="top">
-			<ul>
-				<li><img src="img/login1_05.png" alt=""></li>
-				<li><img src="img/login2_05.png" alt=""></li>
-				<li><img src="img/login_05.png" alt=""></li>
-			</ul>
-		</div>
+				<div class="swiper-container">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<img src="img/login1_05.png" alt="">
+						</div>
+						<div class="swiper-slide">
+							<img src="img/login2_05.png" alt="">
+						</div>
+						<div class="swiper-slide">
+							<img src="img/login_05.png" alt="">
+						</div>
+					</div>
+					<div class="swiper-pagination"></div>
+				</div>
+			</div>
 		<div class="bottom">
 			<input type="text" placeholder="手机号 /邮箱 /小米账号">
 
@@ -35,5 +45,37 @@
 		</div>
 		<a href="index.html" class="back iconfont">&#xe612;</a>
 	</div>
+	<script src="swiper.min.js"></script>
+	<script>
+        var swiper = new Swiper('.swiper-container',{
+            direction : 'horizontal',
+            autoplay:true,
+            speed:800,
+            loop:true,
+            // effect : 'fade',
+            // pagination : {
+            //     el:'.swiper-pagination',
+            // },
+            // on:{
+            //     init:function(swiper){
+            //         slide=this.slides.eq(0);
+            //         slide.addClass('ani-slide');
+            //     },
+            //     transitionStart: function(){
+            //         for(i=0;i<this.slides.length;i++){
+            //             slide=this.slides.eq(i);
+            //             slide.removeClass('ani-slide');
+            //         }
+            //     },
+            //     transitionEnd: function(){
+            //         slide=this.slides.eq(this.activeIndex);
+            //         slide.addClass('ani-slide');
+            //
+            //     },
+            // }
+        });
+
+	</script>
+
 </body>
 </html>
